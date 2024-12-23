@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><p class="toggle-menu" style="font-family: 'MyCustomFont', sans-serif;">Dungeons & Dragons</p></li>
+                <li class="menu-item"><a href="rules.html">Rules</a></li>
+                <li class="menu-item"><a href="worlds.html">Worlds</a></li>
+                <li class="menu-item"><a href="races.html">Races</a></li>
+                <li class="menu-item"><a href="classes.html">Classes</a></li>
+                <li class="menu-item"><a href="Magic&Spells.html">Magic & Spells</a></li>
+                <li class="menu-item"><a href="Items&Artifacts.html">Items & Artifacts</a></li>
+                <li class="menu-item"><a href="Lore.html">Lore</a></li>
+                <li class="menu-item"><a href="tips.html">Tips & Tricks</a></li>
+                <li class="menu-item"><a href="OwnAdventure.html">Create Your Own Adventure</a></li>
+                <li class="menu-item"><a href="main.html"><i class="fa-solid fa-house"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main style="margin-top: 50px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        <section class="rules-section">
+            <h2 style="margin: 70px; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                <i class="fas fa-gem" style="font-size: 30px;"></i>
+                List of Items & Artifacts from DnD
+                <i class="fas fa-treasure-chest" style="font-size: 30px;"></i>
+            </h2>                    
+            <table class="styled-table sized-table">
+                <thead>
+                    <tr>
+                        <th class="sorting" onclick="sortTable(0)">Item Name</th>
+                        <th class="sorting" onclick="sortTable(1)">Type</th>
+                        <th class="sorting" onclick="sortTable(2)">Rarity</th>
+                        <th class="sorting" onclick="sortTable(3)">Description</th>
+                        <th class="sorting" onclick="sortTable(4)">Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bag of Holding</td>
+                        <td>Wondrous Item</td>
+                        <td>Uncommon</td>
+                        <td>A magical bag that can hold far more than its exterior size suggests.</td>
+                        <td>Great for carrying large amounts of treasure.</td>
+                    </tr>
+                    <tr>
+                        <td>Ring of Invisibility</td>
+                        <td>Ring</td>
+                        <td>Legendary</td>
+                        <td>Grants the wearer invisibility while worn and activated.</td>
+                        <td>Perfect for stealth missions.</td>
+                    </tr>
+                    <tr>
+                        <td>Cloak of Displacement</td>
+                        <td>Wondrous Item</td>
+                        <td>Rare</td>
+                        <td>Causes attackers to have disadvantage on attack rolls against you.</td>
+                        <td>Excellent for dodging attacks.</td>
+                    </tr>
+                    <tr>
+                        <td>Immovable Rod</td>
+                        <td>Rod</td>
+                        <td>Uncommon</td>
+                        <td>A rod that, when activated, becomes fixed in place and immovable.</td>
+                        <td>Useful for traps or holding doors shut.</td>
+                    </tr>
+                    <tr>
+                        <td>Wand of Fireballs</td>
+                        <td>Wand</td>
+                        <td>Rare</td>
+                        <td>A wand capable of casting the Fireball spell multiple times.</td>
+                        <td>Great for area-of-effect damage.</td>
+                    </tr>
+                    <tr>
+                        <td>Deck of Many Things</td>
+                        <td>Wondrous Item</td>
+                        <td>Legendary</td>
+                        <td>A deck of cards that produces random magical effects, both beneficial and disastrous.</td>
+                        <td>Highly chaotic and unpredictable.</td>
+                    </tr>
+                    <tr>
+                        <td>Sword of Sharpness</td>
+                        <td>Weapon (Sword)</td>
+                        <td>Rare</td>
+                        <td>A sword that deals extra damage and can sever limbs on a critical hit.</td>
+                        <td>Deadly against tough enemies.</td>
+                    </tr>
+                    <tr>
+                        <td>Broom of Flying</td>
+                        <td>Wondrous Item</td>
+                        <td>Uncommon</td>
+                        <td>A magical broom that allows the user to fly.</td>
+                        <td>Great for mobility and exploration.</td>
+                    </tr>
+                    <tr>
+                        <td>Amulet of Health</td>
+                        <td>Wondrous Item</td>
+                        <td>Rare</td>
+                        <td>Increases the wearer's Constitution score to 19 while worn.</td>
+                        <td>Boosts health significantly.</td>
+                    </tr>
+                    <tr>
+                        <td>Portable Hole</td>
+                        <td>Wondrous Item</td>
+                        <td>Rare</td>
+                        <td>Creates an extradimensional space for storage or transportation.</td>
+                        <td>Handy for storing bulky items.</td>
+                    </tr>
+                    <tr>
+                        <td>Boots of Speed</td>
+                        <td>Wondrous Item</td>
+                        <td>Rare</td>
+                        <td>When activated, these boots double your walking speed and grant advantage on Dexterity saving throws.</td>
+                        <td>Great for quick escapes or chasing enemies.</td>
+                    </tr>
+                    <tr>
+                        <td>Belt of Giant Strength</td>
+                        <td>Wondrous Item</td>
+                        <td>Rare to Legendary</td>
+                        <td>Increases your Strength score to match that of a specific giant type (e.g., Hill Giant, Storm Giant).</td>
+                        <td>Essential for melee fighters.</td>
+                    </tr>
+                    <tr>
+                        <td>Helm of Telepathy</td>
+                        <td>Wondrous Item</td>
+                        <td>Uncommon</td>
+                        <td>Allows the wearer to communicate telepathically and cast Suggestion on a creature.</td>
+                        <td>Useful for mind control and information gathering.</td>
+                    </tr>
+                    <tr>
+                        <td>Gauntlets of Ogre Power</td>
+                        <td>Wondrous Item</td>
+                        <td>Uncommon</td>
+                        <td>Set your Strength score to 19 while wearing these gauntlets.</td>
+                        <td>Great for characters with low Strength.</td>
+                    </tr>
+                    <tr>
+                        <td>Ring of Protection</td>
+                        <td>Ring</td>
+                        <td>Rare</td>
+                        <td>Grants a +1 bonus to AC and saving throws while worn.</td>
+                        <td>Ideal for survivability.</td>
+                    </tr>
+                    <tr>
+                        <td>Cloak of Elvenkind</td>
+                        <td>Wondrous Item</td>
+                        <td>Uncommon</td>
+                        <td>Grants advantage on Stealth checks while the hood is up.</td>
+                        <td>Perfect for sneaky characters.</td>
+                    </tr>
+                    <tr>
+                        <td>Staff of the Magi</td>
+                        <td>Staff</td>
+                        <td>Legendary</td>
+                        <td>A powerful staff that grants spell slots, spell absorption, and numerous spellcasting options.</td>
+                        <td>One of the strongest items for spellcasters.</td>
+                    </tr>
+                    <tr>
+                        <td>Bracers of Defense</td>
+                        <td>Wondrous Item</td>
+                        <td>Rare</td>
+                        <td>Grants a +2 bonus to AC if you are wearing no armor or shield.</td>
+                        <td>Great for monks and mages.</td>
+                    </tr>
+                    <tr>
+                        <td>Amulet of the Planes</td>
+                        <td>Wondrous Item</td>
+                        <td>Very Rare</td>
+                        <td>Allows you to teleport yourself and others to a different plane of existence.</td>
+                        <td>Perfect for interplanar adventures.</td>
+                    </tr>
+                    <tr>
+                        <td>Luckstone</td>
+                        <td>Wondrous Item</td>
+                        <td>Uncommon</td>
+                        <td>Grants a +1 bonus to ability checks and saving throws while carried.</td>
+                        <td>Small but consistently useful.</td>
+                    </tr>
+                    <tr>
+                        <td>Ring of Spell Storing</td>
+                        <td>Ring</td>
+                        <td>Rare</td>
+                        <td>Stores spells cast into it, which can then be used by the wearer.</td>
+                        <td>Perfect for preparing extra spells.</td>
+                    </tr>
+                    <tr>
+                        <td>Boots of Levitation</td>
+                        <td>Wondrous Item</td>
+                        <td>Rare</td>
+                        <td>Allow the wearer to levitate up or down at will.</td>
+                        <td>Useful for vertical movement or avoiding traps.</td>
+                    </tr>
+                    <tr>
+                        <td>Cape of the Mountebank</td>
+                        <td>Wondrous Item</td>
+                        <td>Rare</td>
+                        <td>Lets you cast Dimension Door once per day.</td>
+                        <td>Great for quick escapes or repositioning.</td>
+                    </tr>
+                    <tr>
+                        <td>Horn of Blasting</td>
+                        <td>Wondrous Item</td>
+                        <td>Rare</td>
+                        <td>Emits a thunderous blast that damages creatures and objects in its area.</td>
+                        <td>Excellent for breaking obstacles.</td>
+                    </tr>
+                    <tr>
+                        <td>Deck of Illusions</td>
+                        <td>Wondrous Item</td>
+                        <td>Uncommon</td>
+                        <td>Draw a card to create a random illusory creature.</td>
+                        <td>Fun and unpredictable utility item.</td>
+                    </tr>
+                    <tr>
+                        <td>Instrument of the Bards</td>
+                        <td>Wondrous Item</td>
+                        <td>Varies</td>
+                        <td>A magical instrument that enhances bardic spellcasting and abilities.</td>
+                        <td>Essential for bard players.</td>
+                    </tr>
+                    <tr>
+                        <td>Staff of Power</td>
+                        <td>Staff</td>
+                        <td>Very Rare</td>
+                        <td>A versatile staff granting bonuses to AC, spell attacks, and saving throws.</td>
+                        <td>Highly valuable for spellcasters.</td>
+                    </tr>
+                    <tr>
+                        <td>Manual of Gainful Exercise</td>
+                        <td>Wondrous Item</td>
+                        <td>Very Rare</td>
+                        <td>Increases your Strength permanently after studying it.</td>
+                        <td>Great for physical characters.</td>
+                    </tr>
+                    <tr>
+                        <td>Manual of Quickness of Action</td>
+                        <td>Wondrous Item</td>
+                        <td>Very Rare</td>
+                        <td>Increases your Dexterity permanently after studying it.</td>
+                        <td>Perfect for rogues and dexterity-based fighters.</td>
+                    </tr>
+                    <tr>
+                        <td>Winged Boots</td>
+                        <td>Wondrous Item</td>
+                        <td>Uncommon</td>
+                        <td>Grant the ability to fly for short periods.</td>
+                        <td>Excellent mobility for ground-based characters.</td>
+                    </tr>
+                    <tr>
+                        <td>Cubic Gate</td>
+                        <td>Wondrous Item</td>
+                        <td>Legendary</td>
+                        <td>A cube with six sides, each linked to a different plane of existence.</td>
+                        <td>Great for interplanar travel or summoning.</td>
+                    </tr>
+                    <tr>
+                        <td>Robe of Stars</td>
+                        <td>Wondrous Item</td>
+                        <td>Very Rare</td>
+                        <td>A robe adorned with stars that allows you to cast Magic Missile and travel to the Astral Plane.</td>
+                        <td>Stylish and powerful for casters.</td>
+                    </tr>
+                    <tr>
+                        <td>Gloves of Thievery</td>
+                        <td>Wondrous Item</td>
+                        <td>Uncommon</td>
+                        <td>Invisible gloves that grant a bonus to Sleight of Hand and lockpicking.</td>
+                        <td>Perfect for rogues.</td>
+                    </tr>
+                    <tr>
+                        <td>Rod of Lordly Might</td>
+                        <td>Rod</td>
+                        <td>Legendary</td>
+                        <td>A rod with multiple transformative options, including a weapon, ladder, and more.</td>
+                        <td>Highly versatile tool and weapon.</td>
+                    </tr>
+                    <tr>
+                        <td>Ring of Regeneration</td>
+                        <td>Ring</td>
+                        <td>Very Rare</td>
+                        <td>Grants the wearer healing over time and regenerates lost body parts.</td>
+                        <td>Excellent for long-term survivability.</td>
+                    </tr>
+                    <tr>
+                        <td>Figurine of Wondrous Power</td>
+                        <td>Wondrous Item</td>
+                        <td>Varies</td>
+                        <td>A small statue that transforms into a magical creature to aid its owner.</td>
+                        <td>Variety of options for utility or combat.</td>
+                    </tr>
+                    <tr>
+                        <td>Periapt of Wound Closure</td>
+                        <td>Wondrous Item</td>
+                        <td>Uncommon</td>
+                        <td>Stabilizes you when you are dying and doubles hit points restored from healing.</td>
+                        <td>Invaluable for frontline fighters.</td>
+                    </tr>
+                    <tr>
+                        <td>Ring of Resistance</td>
+                        <td>Ring</td>
+                        <td>Rare</td>
+                        <td>Grants resistance to a specific damage type.</td>
+                        <td>Choose the type based on your campaign needs.</td>
+                    </tr>
+                    <tr>
+                        <td>Sphere of Annihilation</td>
+                        <td>Wondrous Item</td>
+                        <td>Legendary</td>
+                        <td>A black sphere that destroys everything it touches.</td>
+                        <td>Highly dangerous and destructive.</td>
+                    </tr>
+                    <tr>
+                        <td>Talisman of Ultimate Evil</td>
+                        <td>Wondrous Item</td>
+                        <td>Legendary</td>
+                        <td>A talisman that can destroy good-aligned characters and bolster evil ones.</td>
+                        <td>Powerful but alignment-dependent.</td>
+                    </tr>
+                    <tr>
+                        <td>Staff of the Woodlands</td>
+                        <td>Staff</td>
+                        <td>Rare</td>
+                        <td>A staff that allows you to cast various druidic spells and create a wall of thorns.</td>
+                        <td>Ideal for druids.</td>
+                    </tr>
+                    <tr>
+                        <td>Amulet of Mighty Fists</td>
+                        <td>Wondrous Item</td>
+                        <td>Rare</td>
+                        <td>Grants bonus to unarmed strikes and natural attacks.</td>
+                        <td>Perfect for monks and beast-shaped druids.</td>
+                    </tr>
+                    <tr>
+                        <td>Rod of Absorption</td>
+                        <td>Rod</td>
+                        <td>Very Rare</td>
+                        <td>Absorbs incoming spells and converts them into spell slots.</td>
+                        <td>Extremely useful for spellcasters.</td>
+                    </tr>
+                    <tr>
+                        <td>Helm of Brilliance</td>
+                        <td>Wondrous Item</td>
+                        <td>Very Rare</td>
+                        <td>A jeweled helm that allows you to cast spells and resist fire damage.</td>
+                        <td>Great for casters in fiery environments.</td>
+                    </tr>
+                    <tr>
+                        <td>Orb of Dragonkind</td>
+                        <td>Wondrous Item</td>
+                        <td>Legendary</td>
+                        <td>A powerful orb that can summon dragons and control them.</td>
+                        <td>Highly situational but extremely powerful.</td>
+                    </tr>
+                    <tr>
+                        <td>Horn of Valhalla</td>
+                        <td>Wondrous Item</td>
+                        <td>Varies</td>
+                        <td>Summons spectral warriors to fight for you.</td>
+                        <td>Perfect for overwhelming enemies.</td>
+                    </tr>
+                    <tr>
+                        <td>Rod of Security</td>
+                        <td>Rod</td>
+                        <td>Legendary</td>
+                        <td>Creates a safe extradimensional space for rest and recovery.</td>
+                        <td>Great for escaping dangerous situations.</td>
+                    </tr>
+                    <tr>
+                        <td>Dragon Slayer</td>
+                        <td>Weapon (Sword)</td>
+                        <td>Rare</td>
+                        <td>A weapon that deals extra damage to dragons.</td>
+                        <td>Essential for campaigns with dragons.</td>
+                    </tr>
+                    <tr>
+                        <td>Efreeti Bottle</td>
+                        <td>Wondrous Item</td>
+                        <td>Very Rare</td>
+                        <td>A magical bottle that can summon an efreeti to grant wishes or fight for you.</td>
+                        <td>Highly unpredictable but powerful.</td>
+                    </tr>
+                    <tr>
+                        <td>Vorpal Sword</td>
+                        <td>Weapon (Sword)</td>
+                        <td>Legendary</td>
+                        <td>A blade that can decapitate foes on a critical hit.</td>
+                        <td>One of the most iconic and deadly weapons.</td>
+                    </tr>            
+                </tbody>
+            </table>
+            
+            
+        </section>
+        
+    </main>
+    <footer>
+        <div class="social-links">
+            <a href="https://www.instagram.com/deonizus" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://discord.com/users/783318981184061481" target="_blank" aria-label="Discord">
+                <i class="fab fa-discord"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/denis-binar-2ab72732b/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        <p>&copy; 2024 Dungeons & Dragons Fan Page | Designed by Deonizus</p>
+    </footer>    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const toggleMenu = document.querySelector('.toggle-menu');
+            const menuList = document.querySelector('ul');
+        
+            toggleMenu.addEventListener('click', function() {
+                menuList.classList.toggle('open');
+            });
+        });
+
+        function sortTable(columnIndex) {
+            const table = document.querySelector(".styled-table tbody");
+            const rows = Array.from(table.rows);
+            const isAscending = table.getAttribute("data-sort-order") !== "asc";
+
+            rows.sort((a, b) => {
+                const cellA = a.cells[columnIndex].innerText.toLowerCase();
+                const cellB = b.cells[columnIndex].innerText.toLowerCase();
+
+                if (cellA < cellB) return isAscending ? -1 : 1;
+                if (cellA > cellB) return isAscending ? 1 : -1;
+                return 0;
+            });
+
+            table.setAttribute("data-sort-order", isAscending ? "asc" : "desc");
+            table.append(...rows);
+        }
+    </script>
+        
+</body>
+</html>

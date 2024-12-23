@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Sliders.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><p class="toggle-menu" style="font-family: 'MyCustomFont', sans-serif;">Dungeons & Dragons</p></li>
+                <li class="menu-item"><a href="rules.html">Rules</a></li>
+                <li class="menu-item"><a href="worlds.html">Worlds</a></li>
+                <li class="menu-item"><a href="races.html">Races</a></li>
+                <li class="menu-item"><a href="classes.html">Classes</a></li>
+                <li class="menu-item"><a href="Magic&Spells.html">Magic & Spells</a></li>
+                <li class="menu-item"><a href="Items&Artifacts.html">Items & Artifacts</a></li>
+                <li class="menu-item"><a href="Lore.html">Lore</a></li>
+                <li class="menu-item"><a href="tips.html">Tips & Tricks</a></li>
+                <li class="menu-item"><a href="OwnAdventure.html">Create Your Own Adventure</a></li>
+                <li class="menu-item"><a href="main.html"><i class="fa-solid fa-house"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main style="margin-top: 50px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        <section class="rules-section">
+            <h2 style="margin-top: 70px;"><i class="fas fa-dragon" style="margin-right: 10px;"></i>Discover 61 Diverse Races, Including the Mythical Phoenixborn!</h2>
+            
+            <section id="slider">
+                <div class="slider-container">
+                    <button id="prevBtn" class="arrow-button"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slide">
+                        <img id="ImageBro" src="/races/human.webp" alt="Race Image">
+                        <div class="info">
+                            <h2 id="Title">Human</h2>
+                            <p id="Description">Humans are the most adaptable and ambitious of the common races. They thrive in every corner of the world, from bustling cities to remote villages. Unlike other races, humans lack a singular defining trait or culture, which is their greatest strength. They embody a wide range of alignments, values, and ambitions. Humans are short-lived compared to many races, usually living to about 80 years, which drives their intense desire to achieve greatness in their lifetimes. They excel at innovation and exploration, often leading the charge into the unknown or spearheading societal advancements.</p>
+                            <h3 id="SMTitle"></h3>
+                            <p id="SMDescription">Humans possess a diverse array of cultures, languages, and traditions depending on the region they hail from. This diversity makes them a unifying or divisive force in the realms they inhabit. As adventurers, humans can be anything from noble paladins to cunning rogues, showcasing their versatility. Their ability to adapt to any environment makes them natural diplomats, leaders, and pioneers.</p>
+                            <h3 id="SMTitle1"></h3>
+                            <p id="SMDescription1"></p>
+                            <h3 id="SMTitle2"></h3>
+                            <p id="SMDescription2"></p>
+                            <h3 id="SMTitle3"></h3>
+                            <p id="SMDescription3"></p>
+                        </div>
+                    </div>
+                    <button id="nextBtn" class="arrow-button"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </section>
+        </section>
+             
+    </main>
+    <footer>
+        <div class="social-links">
+            <a href="https://www.instagram.com/deonizus" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://discord.com/users/783318981184061481" target="_blank" aria-label="Discord">
+                <i class="fab fa-discord"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/denis-binar-2ab72732b/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        <p>&copy; 2024 Dungeons & Dragons Fan Page | Designed by Deonizus</p>
+    </footer>    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const toggleMenu = document.querySelector('.toggle-menu');
+            const menuList = document.querySelector('ul');
+        
+            toggleMenu.addEventListener('click', function() {
+                menuList.classList.toggle('open');
+            });
+        });
+
+
+    </script>
+    <script src="RacesSlider.js"></script>
+
+</body>
+</html>

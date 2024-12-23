@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><p class="toggle-menu" style="font-family: 'MyCustomFont', sans-serif;">Dungeons & Dragons</p></li>
+                <li class="menu-item"><a href="rules.html">Rules</a></li>
+                <li class="menu-item"><a href="worlds.html">Worlds</a></li>
+                <li class="menu-item"><a href="races.html">Races</a></li>
+                <li class="menu-item"><a href="classes.html">Classes</a></li>
+                <li class="menu-item"><a href="Magic&Spells.html">Magic & Spells</a></li>
+                <li class="menu-item"><a href="Items&Artifacts.html">Items & Artifacts</a></li>
+                <li class="menu-item"><a href="Lore.html">Lore</a></li>
+                <li class="menu-item"><a href="tips.html">Tips & Tricks</a></li>
+                <li class="menu-item"><a href="OwnAdventure.html">Create Your Own Adventure</a></li>
+                <li class="menu-item"><a href="main.html"><i class="fa-solid fa-house"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main style="margin-top: 50px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        <section class="rules-section">
+            <h2 style="margin: 70px; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                <i class="fas fa-hat-wizard" style="font-size: 30px;"></i>
+                List of Magic Spells from DnD
+                <i class="fas fa-scroll" style="font-size: 30px;"></i>
+            </h2>            
+            <table class="styled-table sized-table">
+                <thead>
+                    <tr>
+                        <th class="sorting" onclick="sortTable(0)">Spell Name</th>
+                        <th class="sorting" onclick="sortTable(1)">Level</th>
+                        <th class="sorting" onclick="sortTable(2)">School</th>
+                        <th class="sorting" onclick="sortTable(3)">Casting Time</th>
+                        <th class="sorting" onclick="sortTable(4)">Range</th>
+                        <th class="sorting" onclick="sortTable(5)">Components</th>
+                        <th class="sorting" onclick="sortTable(6)">Duration</th>
+                        <th class="sorting" onclick="sortTable(7)">Description</th>
+                        <th class="sorting" onclick="sortTable(8)">Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Acid Splash</td>
+                        <td>Cantrip</td>
+                        <td>Conjuration</td>
+                        <td>1 action</td>
+                        <td>60 ft</td>
+                        <td>V, S</td>
+                        <td>Instantaneous</td>
+                        <td>You hurl a bubble of acid at one or two targets close to each other.</td>
+                        <td>Great for dealing with groups.</td>
+                    </tr>
+                    <tr>
+                        <td>Fire Bolt</td>
+                        <td>Cantrip</td>
+                        <td>Evocation</td>
+                        <td>1 action</td>
+                        <td>120 ft</td>
+                        <td>V, S</td>
+                        <td>Instantaneous</td>
+                        <td>You launch a fiery bolt that deals fire damage.</td>
+                        <td>Perfect for long-range combat.</td>
+                    </tr>
+                    <tr>
+                        <td>Light</td>
+                        <td>Cantrip</td>
+                        <td>Evocation</td>
+                        <td>1 action</td>
+                        <td>Touch</td>
+                        <td>V, M</td>
+                        <td>1 hour</td>
+                        <td>Imbue an object with light, illuminating like a torch.</td>
+                        <td>Ideal for exploring dark areas.</td>
+                    </tr>
+                    <tr>
+                        <td>Mage Hand</td>
+                        <td>Cantrip</td>
+                        <td>Conjuration</td>
+                        <td>1 action</td>
+                        <td>30 ft</td>
+                        <td>V, S</td>
+                        <td>1 minute</td>
+                        <td>Create a spectral hand that can manipulate objects.</td>
+                        <td>Useful for triggering traps safely.</td>
+                    </tr>
+                    <tr>
+                        <td>Cure Wounds</td>
+                        <td>1st</td>
+                        <td>Evocation</td>
+                        <td>1 action</td>
+                        <td>Touch</td>
+                        <td>V, S</td>
+                        <td>Instantaneous</td>
+                        <td>Heal a creature you touch for a moderate amount of hit points.</td>
+                        <td>A must-have for any healer.</td>
+                    </tr>
+                    <tr>
+                        <td>Detect Magic</td>
+                        <td>1st</td>
+                        <td>Divination</td>
+                        <td>1 action</td>
+                        <td>Self</td>
+                        <td>V, S</td>
+                        <td>Concentration, 10 min</td>
+                        <td>Sense the presence of magic within 30 feet.</td>
+                        <td>Essential for locating magical items.</td>
+                    </tr>
+                    <tr>
+                        <td>Magic Missile</td>
+                        <td>1st</td>
+                        <td>Evocation</td>
+                        <td>1 action</td>
+                        <td>120 ft</td>
+                        <td>V, S</td>
+                        <td>Instantaneous</td>
+                        <td>Automatically hits and damages one or more targets.</td>
+                        <td>Never misses – reliable damage.</td>
+                    </tr>
+                    <tr>
+                        <td>Shield</td>
+                        <td>1st</td>
+                        <td>Abjuration</td>
+                        <td>Reaction</td>
+                        <td>Self</td>
+                        <td>V, S</td>
+                        <td>1 round</td>
+                        <td>Grants +5 AC as a reaction.</td>
+                        <td>Life-saver against high rolls.</td>
+                    </tr>
+                    <tr>
+                        <td>Flaming Sphere</td>
+                        <td>2nd</td>
+                        <td>Conjuration</td>
+                        <td>1 action</td>
+                        <td>60 ft</td>
+                        <td>V, S, M</td>
+                        <td>Concentration, 1 min</td>
+                        <td>Summon a flaming sphere that burns enemies in its path.</td>
+                        <td>Excellent for crowd control.</td>
+                    </tr>
+                    <tr>
+                        <td>Hold Person</td>
+                        <td>2nd</td>
+                        <td>Enchantment</td>
+                        <td>1 action</td>
+                        <td>60 ft</td>
+                        <td>V, S, M</td>
+                        <td>Concentration, 1 min</td>
+                        <td>Paralyze a humanoid within range.</td>
+                        <td>Great for shutting down enemies.</td>
+                    </tr>
+                    <tr>
+                        <td>Misty Step</td>
+                        <td>2nd</td>
+                        <td>Conjuration</td>
+                        <td>Bonus Action</td>
+                        <td>30 ft</td>
+                        <td>V</td>
+                        <td>Instantaneous</td>
+                        <td>Teleport to a spot you can see.</td>
+                        <td>Perfect for escapes or quick moves.</td>
+                    </tr>
+                    <tr>
+                        <td>Fireball</td>
+                        <td>3rd</td>
+                        <td>Evocation</td>
+                        <td>1 action</td>
+                        <td>150 ft</td>
+                        <td>V, S, M</td>
+                        <td>Instantaneous</td>
+                        <td>Deal massive fire damage in a large area.</td>
+                        <td>Classic wizard nuke spell.</td>
+                    </tr>
+                    <tr>
+                        <td>Counterspell</td>
+                        <td>3rd</td>
+                        <td>Abjuration</td>
+                        <td>Reaction</td>
+                        <td>60 ft</td>
+                        <td>S</td>
+                        <td>Instantaneous</td>
+                        <td>Interrupt the casting of a spell.</td>
+                        <td>Essential for shutting down casters.</td>
+                    </tr>
+                    <tr>
+                        <td>Polymorph</td>
+                        <td>4th</td>
+                        <td>Transmutation</td>
+                        <td>1 action</td>
+                        <td>60 ft</td>
+                        <td>V, S, M</td>
+                        <td>Concentration, 1 hr</td>
+                        <td>Transform a creature into a beast.</td>
+                        <td>Versatile for combat or utility.</td>
+                    </tr>
+                    <tr>
+                        <td>Cloudkill</td>
+                        <td>5th</td>
+                        <td>Conjuration</td>
+                        <td>1 action</td>
+                        <td>120 ft</td>
+                        <td>V, S</td>
+                        <td>Concentration, 10 min</td>
+                        <td>Summon a poisonous fog that moves and damages creatures inside it.</td>
+                        <td>Powerful area control spell.</td>
+                    </tr>
+                    <tr>
+                        <td>Disintegrate</td>
+                        <td>6th</td>
+                        <td>Transmutation</td>
+                        <td>1 action</td>
+                        <td>60 ft</td>
+                        <td>V, S, M</td>
+                        <td>Instantaneous</td>
+                        <td>Turn a creature or object to dust with massive force damage.</td>
+                        <td>Devastating single-target spell.</td>
+                    </tr>
+                    <tr>
+                        <td>Plane Shift</td>
+                        <td>7th</td>
+                        <td>Conjuration</td>
+                        <td>1 action</td>
+                        <td>Touch</td>
+                        <td>V, S, M</td>
+                        <td>Instantaneous</td>
+                        <td>Send a creature to another plane of existence or travel there yourself.</td>
+                        <td>Extremely versatile for combat and exploration.</td>
+                    </tr>
+                    <tr>
+                        <td>True Seeing</td>
+                        <td>6th</td>
+                        <td>Divination</td>
+                        <td>1 action</td>
+                        <td>Touch</td>
+                        <td>V, S, M</td>
+                        <td>1 hour</td>
+                        <td>Grant a creature truesight to see invisible objects and into the Ethereal Plane.</td>
+                        <td>Critical for dealing with illusions or hidden enemies.</td>
+                    </tr>
+                    <tr>
+                        <td>Dominate Person</td>
+                        <td>5th</td>
+                        <td>Enchantment</td>
+                        <td>1 action</td>
+                        <td>60 ft</td>
+                        <td>V, S</td>
+                        <td>Concentration, 1 min</td>
+                        <td>Control the actions of a humanoid within range.</td>
+                        <td>Powerful control, but save-dependent.</td>
+                    </tr>
+                    <tr>
+                        <td>Raise Dead</td>
+                        <td>5th</td>
+                        <td>Necromancy</td>
+                        <td>1 hour</td>
+                        <td>Touch</td>
+                        <td>V, S, M</td>
+                        <td>Instantaneous</td>
+                        <td>Bring a dead creature back to life with temporary penalties.</td>
+                        <td>Critical for reviving fallen allies.</td>
+                    </tr>
+                    <tr>
+                        <td>Wall of Force</td>
+                        <td>5th</td>
+                        <td>Evocation</td>
+                        <td>1 action</td>
+                        <td>120 ft</td>
+                        <td>V, S, M</td>
+                        <td>Concentration, 10 min</td>
+                        <td>Create an unbreakable, invisible wall to block enemies or protect allies.</td>
+                        <td>Perfect for defense or dividing combatants.</td>
+                    </tr>
+                    <tr>
+                        <td>Teleportation Circle</td>
+                        <td>5th</td>
+                        <td>Conjuration</td>
+                        <td>1 minute</td>
+                        <td>10 ft</td>
+                        <td>V, M</td>
+                        <td>1 round</td>
+                        <td>Create a portal linking to a permanent teleportation circle.</td>
+                        <td>Great for fast travel between known locations.</td>
+                    </tr>
+                    <tr>
+                        <td>Mass Suggestion</td>
+                        <td>6th</td>
+                        <td>Enchantment</td>
+                        <td>1 action</td>
+                        <td>60 ft</td>
+                        <td>V, M</td>
+                        <td>24 hours</td>
+                        <td>Influence up to 12 creatures to follow a reasonable suggestion.</td>
+                        <td>Powerful for controlling groups.</td>
+                    </tr>
+                    <tr>
+                        <td>Regenerate</td>
+                        <td>7th</td>
+                        <td>Transmutation</td>
+                        <td>1 minute</td>
+                        <td>Touch</td>
+                        <td>V, S, M</td>
+                        <td>1 hour</td>
+                        <td>Heal a creature over time and regrow lost body parts.</td>
+                        <td>Invaluable for recovery between battles.</td>
+                    </tr>
+                    <tr>
+                        <td>Healing Word</td>
+                        <td>1st</td>
+                        <td>Evocation</td>
+                        <td>Bonus Action</td>
+                        <td>60 ft</td>
+                        <td>V</td>
+                        <td>Instantaneous</td>
+                        <td>Heal a creature within range for a small amount.</td>
+                        <td>Quick and reliable in combat.</td>
+                    </tr>
+                    <tr>
+                        <td>Identify</td>
+                        <td>1st</td>
+                        <td>Divination</td>
+                        <td>1 minute</td>
+                        <td>Touch</td>
+                        <td>V, S, M</td>
+                        <td>Instantaneous</td>
+                        <td>Learn the properties and effects of a magical item or spell.</td>
+                        <td>Essential for discovering magic items.</td>
+                    </tr>
+                    <tr>
+                        <td>Thunderwave</td>
+                        <td>1st</td>
+                        <td>Evocation</td>
+                        <td>1 action</td>
+                        <td>Self (15-ft cube)</td>
+                        <td>V, S</td>
+                        <td>Instantaneous</td>
+                        <td>Emit a wave of thunderous force that damages and pushes creatures away.</td>
+                        <td>Great for clearing enemies.</td>
+                    </tr>
+                    <tr>
+                        <td>Mirror Image</td>
+                        <td>2nd</td>
+                        <td>Illusion</td>
+                        <td>1 action</td>
+                        <td>Self</td>
+                        <td>V, S</td>
+                        <td>1 minute</td>
+                        <td>Create illusory duplicates of yourself to confuse attackers.</td>
+                        <td>Excellent for defense.</td>
+                    </tr>
+                    <tr>
+                        <td>Shatter</td>
+                        <td>2nd</td>
+                        <td>Evocation</td>
+                        <td>1 action</td>
+                        <td>60 ft</td>
+                        <td>V, S, M</td>
+                        <td>Instantaneous</td>
+                        <td>Create a loud noise that damages creatures and objects in a radius.</td>
+                        <td>Good for breaking objects.</td>
+                    </tr>
+                    <tr>
+                        <td>Leomund's Tiny Hut</td>
+                        <td>3rd</td>
+                        <td>Evocation</td>
+                        <td>1 minute</td>
+                        <td>Self (10-ft radius)</td>
+                        <td>V, S, M</td>
+                        <td>8 hours</td>
+                        <td>Create a magical dome that shelters you and your allies.</td>
+                        <td>Essential for long rests in dangerous areas.</td>
+                    </tr>
+                    <tr>
+                        <td>Haste</td>
+                        <td>3rd</td>
+                        <td>Transmutation</td>
+                        <td>1 action</td>
+                        <td>30 ft</td>
+                        <td>V, S, M</td>
+                        <td>Concentration, 1 min</td>
+                        <td>Double a creature's speed and give it an extra action.</td>
+                        <td>Boosts melee fighters significantly.</td>
+                    </tr>
+                    <tr>
+                        <td>Fly</td>
+                        <td>3rd</td>
+                        <td>Transmutation</td>
+                        <td>1 action</td>
+                        <td>Touch</td>
+                        <td>V, S, M</td>
+                        <td>Concentration, 10 min</td>
+                        <td>Grant a creature the ability to fly.</td>
+                        <td>Great for mobility and exploration.</td>
+                    </tr>
+                    <tr>
+                        <td>Banishment</td>
+                        <td>4th</td>
+                        <td>Abjuration</td>
+                        <td>1 action</td>
+                        <td>60 ft</td>
+                        <td>V, S, M</td>
+                        <td>Concentration, 1 min</td>
+                        <td>Temporarily banish a creature to another plane.</td>
+                        <td>Great for removing threats.</td>
+                    </tr>
+                    <tr>
+                        <td>Dimension Door</td>
+                        <td>4th</td>
+                        <td>Conjuration</td>
+                        <td>1 action</td>
+                        <td>500 ft</td>
+                        <td>V</td>
+                        <td>Instantaneous</td>
+                        <td>Teleport yourself and one creature to a spot you can see.</td>
+                        <td>Ideal for quick escapes or repositioning.</td>
+                    </tr>
+                    <tr>
+                        <td>Wall of Fire</td>
+                        <td>4th</td>
+                        <td>Evocation</td>
+                        <td>1 action</td>
+                        <td>120 ft</td>
+                        <td>V, S, M</td>
+                        <td>Concentration, 1 min</td>
+                        <td>Create a wall of flames that damages creatures passing through it.</td>
+                        <td>Effective for area denial.</td>
+                    </tr>
+                    <tr>
+                        <td>Mass Cure Wounds</td>
+                        <td>5th</td>
+                        <td>Evocation</td>
+                        <td>1 action</td>
+                        <td>60 ft</td>
+                        <td>V, S</td>
+                        <td>Instantaneous</td>
+                        <td>Heal up to six creatures in a radius.</td>
+                        <td>Critical for party-wide healing.</td>
+                    </tr>
+                    <tr>
+                        <td>True Seeing</td>
+                        <td>6th</td>
+                        <td>Divination</td>
+                        <td>1 action</td>
+                        <td>Touch</td>
+                        <td>V, S, M</td>
+                        <td>1 hour</td>
+                        <td>Grant a creature truesight, allowing it to see invisible objects and into the Ethereal Plane.</td>
+                        <td>Crucial for overcoming illusions.</td>
+                    </tr>
+                    <tr>
+                        <td>Reverse Gravity</td>
+                        <td>7th</td>
+                        <td>Transmutation</td>
+                        <td>1 action</td>
+                        <td>100 ft</td>
+                        <td>V, S, M</td>
+                        <td>Concentration, 1 min</td>
+                        <td>Reverse gravity in an area, causing creatures and objects to fall upward.</td>
+                        <td>Incredibly disruptive in combat.</td>
+                    </tr>
+                    <tr>
+                        <td>Regenerate</td>
+                        <td>7th</td>
+                        <td>Transmutation</td>
+                        <td>1 minute</td>
+                        <td>Touch</td>
+                        <td>V, S, M</td>
+                        <td>1 hour</td>
+                        <td>Heal a creature over time and regrow lost body parts.</td>
+                        <td>Essential for long-term recovery.</td>
+                    </tr>
+                    <tr>
+                        <td>Etherealness</td>
+                        <td>7th</td>
+                        <td>Transmutation</td>
+                        <td>1 action</td>
+                        <td>Self</td>
+                        <td>V</td>
+                        <td>8 hours</td>
+                        <td>Enter the Ethereal Plane and move through objects.</td>
+                        <td>Great for bypassing obstacles.</td>
+                    </tr>
+                    <tr>
+                        <td>Maze</td>
+                        <td>8th</td>
+                        <td>Conjuration</td>
+                        <td>1 action</td>
+                        <td>60 ft</td>
+                        <td>V, S</td>
+                        <td>Concentration, 10 min</td>
+                        <td>Trap a creature in a labyrinthian demiplane.</td>
+                        <td>Removes a powerful enemy temporarily.</td>
+                    </tr>
+                    <tr>
+                        <td>Sunburst</td>
+                        <td>8th</td>
+                        <td>Evocation</td>
+                        <td>1 action</td>
+                        <td>150 ft</td>
+                        <td>V, S, M</td>
+                        <td>Instantaneous</td>
+                        <td>Blinds and damages creatures in a wide radius.</td>
+                        <td>Powerful against groups of enemies.</td>
+                    </tr>
+                    <tr>
+                        <td>Power Word Stun</td>
+                        <td>8th</td>
+                        <td>Enchantment</td>
+                        <td>1 action</td>
+                        <td>60 ft</td>
+                        <td>V</td>
+                        <td>Instantaneous</td>
+                        <td>Stun a creature with 150 hit points or fewer.</td>
+                        <td>Invaluable for disabling strong enemies.</td>
+                    </tr>
+                    <tr>
+                        <td>Foresight</td>
+                        <td>9th</td>
+                        <td>Divination</td>
+                        <td>1 minute</td>
+                        <td>Touch</td>
+                        <td>V, S, M</td>
+                        <td>8 hours</td>
+                        <td>Grant a creature near-perfect foresight, giving advantage on rolls and enemy disadvantage.</td>
+                        <td>Exceptional for critical missions.</td>
+                    </tr>
+                    <tr>
+                        <td>Meteor Swarm</td>
+                        <td>9th</td>
+                        <td>Evocation</td>
+                        <td>1 action</td>
+                        <td>1 mile</td>
+                        <td>V, S</td>
+                        <td>Instantaneous</td>
+                        <td>Summon fiery meteors to devastate a massive area.</td>
+                        <td>The ultimate damage-dealing spell.</td>
+                    </tr>
+                    <tr>
+                        <td>Power Word Kill</td>
+                        <td>9th</td>
+                        <td>Enchantment</td>
+                        <td>1 action</td>
+                        <td>60 ft</td>
+                        <td>V</td>
+                        <td>Instantaneous</td>
+                        <td>Instantly kill a creature with 100 hit points or fewer.</td>
+                        <td>The ultimate finisher.</td>
+                    </tr>
+                    <tr>
+                        <td>Wish</td>
+                        <td>9th</td>
+                        <td>Conjuration</td>
+                        <td>1 action</td>
+                        <td>Self</td>
+                        <td>V</td>
+                        <td>Instantaneous</td>
+                        <td>Make a wish to alter reality itself.</td>
+                        <td>The most powerful spell in the game.</td>
+                    </tr>
+                    <tr>
+                        <td>Time Stop</td>
+                        <td>9th</td>
+                        <td>Transmutation</td>
+                        <td>1 action</td>
+                        <td>Self</td>
+                        <td>V</td>
+                        <td>Instantaneous</td>
+                        <td>Take multiple turns in a row as time halts for others.</td>
+                        <td>Perfect for repositioning or casting.</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            
+        </section>
+        
+    </main>
+    <footer>
+        <div class="social-links">
+            <a href="https://www.instagram.com/deonizus" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://discord.com/users/783318981184061481" target="_blank" aria-label="Discord">
+                <i class="fab fa-discord"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/denis-binar-2ab72732b/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        <p>&copy; 2024 Dungeons & Dragons Fan Page | Designed by Deonizus</p>
+    </footer>    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const toggleMenu = document.querySelector('.toggle-menu');
+            const menuList = document.querySelector('ul');
+        
+            toggleMenu.addEventListener('click', function() {
+                menuList.classList.toggle('open');
+            });
+        });
+
+        function sortTable(columnIndex) {
+            const table = document.querySelector(".styled-table tbody");
+            const rows = Array.from(table.rows);
+            const isAscending = table.getAttribute("data-sort-order") !== "asc";
+
+            rows.sort((a, b) => {
+                const cellA = a.cells[columnIndex].innerText.toLowerCase();
+                const cellB = b.cells[columnIndex].innerText.toLowerCase();
+
+                if (cellA < cellB) return isAscending ? -1 : 1;
+                if (cellA > cellB) return isAscending ? 1 : -1;
+                return 0;
+            });
+
+            table.setAttribute("data-sort-order", isAscending ? "asc" : "desc");
+            table.append(...rows);
+        }
+    </script>
+        
+</body>
+</html>

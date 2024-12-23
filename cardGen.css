@@ -1,0 +1,113 @@
+#card-generator {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+#cardForm {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 15px 20px;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    max-width: 500px; 
+    margin: 0 auto; 
+}
+
+#cardForm label {
+    text-align: right;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#cardForm input,
+#cardForm select,
+#cardForm textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#cardForm textarea {
+    resize: none;
+}
+
+.form-heading{
+    grid-column: span 2;
+}
+
+#cardForm button {
+    grid-column: span 2;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#cardForm button:hover {
+    background-color: #6c5ce7;
+}
+
+
+#cardCanvas {
+    flex: 1;
+    border-radius: 20px;
+    border: 2px solid #333;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    height: 650px; 
+    max-width: 450px; 
+}
+
+
+#downloadCard {
+    display: block;
+    margin-top: 20px;
+    justify-self: end;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #000000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+#downloadCard:hover {
+    background-color: #6c5ce7;
+    transform: scale(1.05);
+}
+
+@media (max-width: 1253px) {
+    #card-generator {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #cardForm {
+        width: 100%;
+    }
+
+    #cardCanvas {
+        width: 100%;
+        max-width: 400px;
+    }
+}
